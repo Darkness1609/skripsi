@@ -1,0 +1,416 @@
+{% extends "layout.html" %} {% block title %} Fitur {% endblock %} {% block
+content %}
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size: 50px">Diagnosa Hama dan Penyakit Tanaman Padi</h1>
+    <h3>Pilih Gejalanya dan Dapatkan Hasilnya!</h3>
+    <form method='post' enctype=multipart/form-data action="/result">
+
+    <!-- <label class="hero-text" for="lname">Gejala pada Tanaman:</label><br /> -->
+
+        <div class="hero">
+          <div class="container2">
+            <div class ="row2">
+              <p>Tulang Daun Menguning</p>
+              <label>
+                <input type="checkbox" value="Tulang_Daun_Menguning" name="mycheckbox" />
+                <span></span>
+              </label>
+            </div>
+            <div class="row2">
+              <p>Berubah Warna Kuning</p>
+              <label>
+                <input type="checkbox" value="Berubah_Warna_Kuning" name="mycheckbox" />
+                <span></span>
+              </label>
+          </div>
+          <div class="row2">
+            <p>Pucuk Daun Menguning</p>
+            <label>
+              <input type="checkbox" value="Pucuk_Daun_Menguning" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Menular</p>
+            <label>
+              <input type="checkbox" value="Menular" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Bulir Mengarat</p>
+            <label>
+              <input type="checkbox" value="Bulir_Mengarat" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Bulir Menghitam</p>
+            <label>
+              <input type="checkbox" value="Bulir_Menghitam" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Musim Hujan</p>
+            <label>
+              <input type="checkbox" value="Musim_Hujan" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Serangan Merata</p>
+            <label>
+              <input type="checkbox" value="Serangan_Merata" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Malai Terkena Sedikit</p>
+            <label>
+              <input type="checkbox" value="Malai_Terkena_Sedikit" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Bulir Masak Susu</p>
+            <label>
+              <input type="checkbox" value="Bulir_Masak_Susu" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Pangkal Malai Membusuk</p>
+            <label>
+              <input type="checkbox" value="Pangkal_Malai_Membusuk" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Bentuk Belah Ketupat</p>
+            <label>
+              <input type="checkbox" value="Bentuk_Belah_Ketupat" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Benih Tertular</p>
+            <label>
+              <input type="checkbox" value="Benih_Tertular" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Terdapat Wereng Coklat</p>
+            <label>
+              <input type="checkbox" value="Terdapat_Wereng_Coklat" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Tanaman Kerdil</p>
+            <label>
+              <input type="checkbox" value="Tanaman_Kerdil" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Malai Tidak Terbentuk</p>
+            <label>
+              <input type="checkbox" value="Malai_Tidak_Terbentuk" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Terdapat Wereng Hijau</p>
+            <label>
+              <input type="checkbox" value="Terdapat_Wereng_Hijau" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Daerah Menguning</p>
+            <label>
+              <input
+                type="checkbox"
+                value="Daerah_Menguning"
+                name="mycheckbox"
+              />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Bulir Kosong</p>
+            <label>
+              <input type="checkbox" value="Bulir_Kosong" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Tanaman Menguning</p>
+            <label>
+              <input
+                type="checkbox"
+                value="Tanaman_Menguning"
+                name="mycheckbox"
+              />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Hangus</p>
+            <label>
+              <input type="checkbox" value="Hangus" name="mycheckbox" />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Hangus Melingkar</p>
+            <label>
+              <input
+                type="checkbox"
+                value="Hangus_Melingkar"
+                name="mycheckbox"
+              />
+              <span></span>
+            </label>
+          </div>
+          <div class="row2">
+            <p>Bekas Tusukan Menghitam</p>
+            <label>
+              <input
+                type="checkbox"
+                value="Bekas_Tusukan_Menghitam"
+                name="mycheckbox"
+              />
+              <span></span>
+            </label>
+          </div>
+        </div>
+          <div class="container">
+            <div class="row">
+              <p>Nimfa Coklat</p>
+              <label>
+                <input type="checkbox" value="Nimfa_Coklat" name="mycheckbox" />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Nimfa Kuning</p>
+              <label>
+                <input type="checkbox" value="Nimfa_Kuning" name="mycheckbox" />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Telur Pada Tanaman</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Telur_Pada_Tanaman"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Lebar</p>
+              <label>
+                <input type="checkbox" value="Lebar" name="mycheckbox" />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Malai Terpotong</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Malai_Terpotong"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Bekas Makan Didaun</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Bekas_makan_di_Daun"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Pembengkakan Jaringan Akar Kait</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Pembengkakan_Jaringan_Akar_Kait"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Pembengkakan Jaringan Akar</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Pembengkakan_Jaringan_Akar"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Perubahan Bentuk</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Perubahan_Bentuk"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Spot</p>
+              <label>
+                <input type="checkbox" value="Spot" name="mycheckbox" />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Daun Menguning</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Daun_Menguning"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Pertumbuhan Terhambat</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Pertumbuhan_Terhambat"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Kotoran di Batang</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Kotoran_di_Batang"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Lubang di Batang</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Lubang_di_Batang"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Bibit Mati</p>
+              <label>
+                <input type="checkbox" value="Bibit_Mati" name="mycheckbox" />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Tanaman Mudah Dicabut</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Mudah_Dicabut"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Malai Hampa</p>
+              <label>
+                <input type="checkbox" value="Malai_Hampa" name="mycheckbox" />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Nimfa</p>
+              <label>
+                <input type="checkbox" value="Nimfa" name="mycheckbox" />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Imago</p>
+              <label>
+                <input type="checkbox" value="Imago" name="mycheckbox" />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Tepi Daun Dihisap</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Tepi_Daun_Dihisap"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Malai Membusuk</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Malai_Membusuk"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+            <div class="row">
+              <p>Pola Makan Acak</p>
+              <label>
+                <input
+                  type="checkbox"
+                  value="Pola_Makan_Acak"
+                  name="mycheckbox"
+                />
+                <span></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="hero"> -->
+        <!-- </div> -->
+        <!-- <hr /> -->
+        <div class="flex">
+
+        <input type="submit" value="upload" />
+        </div>
+        {% endblock %}
+        
+      </div>
+    </div>
+  </div>
+</div>

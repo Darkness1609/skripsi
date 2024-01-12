@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+Fitur
+{% endblock %}
+{% block content %}
+<div class="hero-image">
+    <div class="hero-text">
+        {% for p in penyakit %}
+
+        <h1>{{p}}</h1>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+</html>
